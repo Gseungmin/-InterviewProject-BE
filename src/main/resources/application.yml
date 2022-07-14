@@ -1,13 +1,27 @@
+#spring:
+#  datasource:
+#    url: jdbc:h2:tcp://localhost/~/test
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/interview?serverTimezone=UTC&characterEncoding=UTF-8
+#    username: root
+#    password: Wltmdals02@
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/test
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
+    url: jdbc:mysql://interview-db.czpdp5wmkp8l.ap-northeast-2.rds.amazonaws.com:3306/interviewDatabase
+    username: cswcsm02
+    password: wltmdals02
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     properties:
       hibernate:
         format_sql: true
